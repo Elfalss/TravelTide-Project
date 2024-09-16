@@ -68,35 +68,37 @@ from sklearn.metrics import silhouette_score
 silhouette_avg = silhouette_score(pca_transformed_data, user_segments)
 print(f'Silhouette Score: {silhouette_avg}')
 
-## Customer Segmentation & Perks
+## Results
+
+### Customer Segmentation & Perks
 We identified six distinct customer segments, each with unique characteristics. Based on these insights, we proposed targeted perks for each group:
 
-1. Frequent Travelers (Group 0 & 2)
+#### 1. Frequent Travelers (Group 0 & 2)
 
 -Key Insight: High travel frequency, moderate hotel spend.
 -Proposed Perk: 10% Flight Discount to encourage continued engagement.
 
-2. Senior Travelers (Group 1)
+#### 2. Senior Travelers (Group 1)
 
 -Key Insight: Cost-effective, leisure-focused travel, lower flight frequency.
 -Proposed Perk: 10% Discount on Leisure Activities to enhance their overall travel experience.
 
-3. Family Travelers (Group 3)
+#### 3. Family Travelers (Group 3)
 
 -Key Insight: Longer trips, higher luggage needs due to family travel.
 -Proposed Perk: Free Checked Bags to alleviate the cost burden for families.
 
-4. Business Travelers (Group 4)
+#### 4. Business Travelers (Group 4)
 
 -Key Insight: High flight frequency, significant hotel spend, time-sensitive travel.
 -Proposed Perk: Priority Check-in & Boarding to save time and enhance convenience.
 
-5. Young Adventurers (Group 5)
+#### 5. Young Adventurers (Group 5)
 
 - Key Insight: Younger demographic, budget-conscious, shorter trips.
 - Proposed Perk: 5% Discount on All Future Bookings to nurture loyalty and encourage frequent travel.
 
-6. Luxury Leisure Travelers (Group 6)
+#### 6. Luxury Leisure Travelers (Group 6)
 
 - Key Insight: High hotel spend, longer trip durations, luxury-focused travel.
 - Proposed Perk: Free Hotel Night with Flight to reward high spending and encourage more bookings.
