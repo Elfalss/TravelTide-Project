@@ -103,6 +103,17 @@ We identified six distinct customer segments, each with unique characteristics. 
 - Key Insight: High hotel spend, longer trip durations, luxury-focused travel.
 - Proposed Perk: Free Hotel Night with Flight to reward high spending and encourage more bookings.
 
+## Tools & Libraries Used
+- Python for data manipulation and analysis
+- Pandas for data processing
+- NumPy for numerical computations
+- Matplotlib & Seaborn for data visualization
+- Scikit-Learn for machine learning (PCA, KMeans)
+- SQLAlchemy for database interactions
+
+## Conclusion and Recommendations
+To further enhance Traveltide's loyalty program, we recommend implementing A/B testing to evaluate perk effectiveness, dynamically adjusting rewards based on evolving customer preferences, and introducing cross-segment offers to encourage users to explore different travel options. Personalized communication and real-time feedback will allow for more targeted engagement, while partnerships with external companies can expand the range of perks offered. By leveraging these strategies, Traveltide can ensure its loyalty program remains relevant and appealing, ultimately driving increased customer satisfaction, retention, and market competitiveness.
+
 
 
 
