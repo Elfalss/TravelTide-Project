@@ -12,7 +12,6 @@ In today's competitive travel industry, customer loyalty is critical for success
 ### 1. Connecting to the Database
 The data was retrieved from a PostgreSQL database using SQLAlchemy to establish a connection and perform SQL queries:
 
-
 import sqlalchemy as sa
 import pandas as pd
 
