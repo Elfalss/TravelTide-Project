@@ -16,10 +16,12 @@ import sqlalchemy as sa
 import pandas as pd
 
 #Create a connection to the PostgreSQL database
+
 engine = sa.create_engine("postgresql://username:password@host/database")
 connection = engine.connect()
 
-# Load the data into pandas DataFrames
+#Load the data into pandas DataFrames
+
 users = pd.read_sql_table('users', connection)
 hotels = pd.read_sql_table('hotels', connection)
 flights = pd.read_sql_table('flights', connection)
