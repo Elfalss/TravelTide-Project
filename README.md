@@ -15,7 +15,7 @@ The data was retrieved from a PostgreSQL database using SQLAlchemy to establish 
 import sqlalchemy as sa
 import pandas as pd
 
-/*# Create a connection to the PostgreSQL database*/
+#Create a connection to the PostgreSQL database
 engine = sa.create_engine("postgresql://username:password@host/database")
 connection = engine.connect()
 
