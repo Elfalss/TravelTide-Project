@@ -11,7 +11,7 @@ In today's competitive travel industry, customer loyalty is critical for success
 ## Workflow Overview
 ### 1. Connecting to the Database
 The data was retrieved from a PostgreSQL database using SQLAlchemy to establish a connection and perform SQL queries:
-
+```python
 import sqlalchemy as sa
 import pandas as pd
 
@@ -26,6 +26,7 @@ users = pd.read_sql_table('users', connection)
 hotels = pd.read_sql_table('hotels', connection)
 flights = pd.read_sql_table('flights', connection)
 sessions = pd.read_sql_table('sessions', connection)
+```
 
 ### 2. Data Preparation and Cleaning
 This step involved cleaning the raw data, addressing missing values, and normalizing the numerical variables for the analysis:
