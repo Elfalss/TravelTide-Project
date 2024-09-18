@@ -37,7 +37,7 @@ from sklearn.preprocessing import StandardScaler
 #Scaling the relevant numerical features
 
 scaler = StandardScaler()
-scaled_data = scaler.fit_transform(data[['numeric_feature1', 'numeric_feature2', 'numeric_feature3']])``´
+scaled_data = scaler.fit_transform(data[['numeric_feature1', 'numeric_feature2', 'numeric_feature3']])```
 
 ### 3. Feature Engineering and Dimensionality Reduction
 To reduce the complexity of the dataset, Principal Component Analysis (PCA) was applied to transform the data into a more manageable number of dimensions while preserving the essential information:
