@@ -31,42 +31,46 @@ sessions = pd.read_sql_table('sessions', connection)
 ### 2. Data Preparation and Cleaning
 This step involved cleaning the raw data, addressing missing values, and normalizing the numerical variables for the analysis:
 
+```python
 from sklearn.preprocessing import StandardScaler
 
 #Scaling the relevant numerical features
 
 scaler = StandardScaler()
-scaled_data = scaler.fit_transform(data[['numeric_feature1', 'numeric_feature2', 'numeric_feature3']])
+scaled_data = scaler.fit_transform(data[['numeric_feature1', 'numeric_feature2', 'numeric_feature3']])``´
 
 ### 3. Feature Engineering and Dimensionality Reduction
 To reduce the complexity of the dataset, Principal Component Analysis (PCA) was applied to transform the data into a more manageable number of dimensions while preserving the essential information:
 
+```python
 from sklearn.decomposition import PCA
 
 #Dimensionality reduction using PCA
 
 pca = PCA(n_components=2)
-pca_transformed_data = pca.fit_transform(scaled_data)
+pca_transformed_data = pca.fit_transform(scaled_data)```
 
 ### 4. User Segmentation
 K-Means clustering was employed to group customers based on their travel patterns and behaviors, allowing for more personalized loyalty program design:
 
+```python
 from sklearn.cluster import KMeans
 
 #Applying K-Means to segment users into distinct clusters
 
 kmeans = KMeans(n_clusters=6, random_state=42)
-user_segments = kmeans.fit_predict(pca_transformed_data)
+user_segments = kmeans.fit_predict(pca_transformed_data)```
 
 ### 5. Cluster Validation and Model Evaluation
 To assess the quality of the clusters, the Silhouette Score was computed, offering insight into how well the data points fit within their assigned clusters:
 
+```python
 from sklearn.metrics import silhouette_score
 
 #Evaluate clustering performance using the Silhouette Score
 
 silhouette_avg = silhouette_score(pca_transformed_data, user_segments)
-print(f'Silhouette Score: {silhouette_avg}')
+print(f'Silhouette Score: {silhouette_avg}')```
 
 ## Results
 
